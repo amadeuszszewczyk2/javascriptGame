@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gra w węża</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="gameUI">
+      <button onclick="startGame()">Start</button>
+      <div id="score">Wynik: 0</div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <div id="endScreen" style="display: none">
+      <p>Koniec gry! Twój wynik to: <span id="finalScore">0</span></p>
+      <button onclick="restartGame()">Zagraj jeszcze raz</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
